@@ -82,5 +82,7 @@ Example-1/Debug/*
 Debug/*
 Example-1/Release/*
 Release/*
+ipch/*
 UICollectionView.opensdf
 UICollectionView.sdf
+UICollectionView.v11.suo
