@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="800,600">
+  <Default name="VScrollBar" value="showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;10&quot; thumbnormalimage=&quot;file=&apos;common/vscrollbar_normal.png&apos; corner=&apos;4,4,4,4&apos;&quot; thumbhotimage=&quot;file=&apos;common/vscrollbar_hot.png&apos; corner=&apos;4,4,4,4&apos;&quot; thumbpushedimage=&quot;file=&apos;common/vscrollbar_pushed.png&apos; corner=&apos;4,4,4,4&apos;&quot; bknormalimage=&quot;file=&apos;common/vscrollbar_bkg.png&apos; corner=&apos;4,4,4,4&apos;&quot; bkhotimage=&quot;file=&apos;common/vscrollbar_bkg.png&apos; corner=&apos;4,4,4,4&apos;&quot;" />
+  <VerticalLayout bordersize="1" bordercolor="#FFCCCCCC" bkcolor="#FFFFFFFF">
+    <UICollectionView inset="2,2,2,2" itempadding="13,13" />
+    <Control height="2" bkcolor="#FFF1F1F1" />
+    <HorizontalLayout height="60">
+      <Control />
+      <Button width="120" name="selectbtn" text="Select All" textcolor="#FFFFFFFF" align="center" bkcolor="#FFDE563B" hotbkcolor="#FFEC9D8C" />
+      <Button width="120" name="deletebtn" text="Delete" textcolor="#FFFFFFFF" align="center" bkcolor="#FF2A363B" hotbkcolor="#FFD3D3D3" />
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>
