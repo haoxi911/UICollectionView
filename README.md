@@ -1,6 +1,6 @@
 # UICollectionView
 
-This project intends to bring the easy-to-use iOS UICollectionView component onto Windows. It is designed to work with a lot of items and only loads the views that it actually needs. UICollectionView for Windows can smoothly display 20,000+ items.
+UICollectionView for Windows is intended to implement the basic features of this easy-to-use iOS component on Windows, this component is built upon the free GUI library [DuiLib](https://github.com/duilib/duilib), and is designed to work with a lot of items and only loads the views that it actually needs. UICollectionView can smoothly display 20,000+ items.
 
 ## High-level concept overview
 
