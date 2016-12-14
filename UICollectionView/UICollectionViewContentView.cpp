@@ -257,7 +257,10 @@ void UICollectionViewContentView::SetPos(RECT rc, bool bNeedInvalidate)
 			if (rcIdx.left >= 0 && rcIdx.right >= 0 && rcIdx.top >= 0 && rcIdx.bottom >= 0) {
 				for (int i = rcIdx.left; i <= rcIdx.right; i ++) {
 					for (int j = rcIdx.top; j <= rcIdx.bottom; j ++) {
-						m_SelectionIndexes.insert(j * m_nColumns + i);		
+						int nIndex = (j * m_nColumns + i);
+						if (nIndex < (int)m_Items.size()) { /* boundary validation */
+							m_SelectionIndexes.insert(nIndex);
+						}
 					}
 				}
 			}
@@ -271,7 +274,7 @@ void UICollectionViewContentView::SetPos(RECT rc, bool bNeedInvalidate)
 						int nIndex = (j * m_nColumns + i);
 						if (m_LassoPersistedSelectionIndexes.count(nIndex)) {
 							m_SelectionIndexes.erase(nIndex);
-						} else {
+						} else if (nIndex < (int)m_Items.size()) { /* boundary validation */
 							m_SelectionIndexes.insert(nIndex);
 						}	
 					}
